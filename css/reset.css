@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	color: white;
+  border: none;
+  text-decoration: none;
+  background: none;
+}

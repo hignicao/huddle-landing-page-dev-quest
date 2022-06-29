@@ -1,0 +1,126 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 30px 60px;
+}
+
+header img {
+  width: 210px;
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.main .description {
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.main .description h1 {
+  font-size: 44px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main .description p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.main .description .box {
+  display: inline;
+  background-color: white;
+  padding: 12px 60px;
+  border-radius: 60px;
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.364);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(257, 40%, 49%);
+  transition: 0.3s ease-in-out;
+}
+
+.main .box:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer .social {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+footer .social a  {  
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 60px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .social a:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 376px) {
+
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main .description {
+    margin: 0;
+    text-align: center;
+  }
+
+  .main .description h1 {
+    font-size: 22px;
+  }
+
+  .main .description p {
+    font-size: 14px;
+  }
+
+  .main .description .box {
+    font-size: 12px;
+    padding: 10px 70px;
+  }
+
+  footer .social{
+    margin-top: 70px;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  footer .social a {
+    width: 30px;
+    height: 30px;
+  }
+
+}
